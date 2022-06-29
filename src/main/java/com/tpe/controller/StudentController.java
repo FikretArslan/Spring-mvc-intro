@@ -40,7 +40,7 @@ public class StudentController {
 	
 	
 	//@RequestMapping(value="/students", method=RequestMethod.GET)
-	@GetMapping("/students")
+	@GetMapping()
 	public ModelAndView getStudents() {
 		List<Student> list = studentService.getAll();
 		ModelAndView mav=new ModelAndView();
